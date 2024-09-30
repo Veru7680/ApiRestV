@@ -1,6 +1,6 @@
 Options All -Indexes
 
-Options Mmultiviews
+Options -Mmultiviews
 RewriteEngine On 
-RewriteCond %{REQUEST_FILNAME} ! -REQUEST_FILNAME
-RewriteRule ^ index.php
+RewriteCond %{REQUEST_FILNAME} ! -f
+RewriteRule ^index.php [QSA, L]

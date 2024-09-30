@@ -1,7 +1,7 @@
 <?php
-class controladorRutas{
+class ControladorRutas{
     public function inicio(){
-        echo "inicio controlador";
+        include "rutas/rutas.php"
     }
 }
 
