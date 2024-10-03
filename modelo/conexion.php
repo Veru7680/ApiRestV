@@ -1,14 +1,15 @@
 <?php
-class conexion{
+class Conexion{
     public static function conectar(){
         $usuario="root";
         $db="apirest1";
         $pass="";
-        $host= "localhost";
+        $host="localhost";
 
-        $link=new PDO("mysql:host=".$host.";dbname=".$db, $usuario,$pass);
+        $link=new PDO("mysql:host=".$host.";dbname=".$db,$usuario,$pass);
         $link->exec("set names utf8");
 
+        return $link;
     }
 }
 
